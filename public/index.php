@@ -1,3 +1,8 @@
+<?php
+declare(strict_types=1);
+session_start();
+$photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,13 +32,25 @@
           <p class="hero-intro">La Davina Emilia is a goddess of beautiful standards, far horizons, and attention that is always earned.</p>
           <div class="hero-actions"><a class="button button-primary" href="#emilia">Meet Emilia</a><a class="text-link" href="#contact">Are you worthy of her time? <span aria-hidden="true">↗</span></a></div>
         </div>
-        <figure class="hero-portrait portrait"><img src="images/sparkletop.jpeg" alt="La Davina Emilia in a sparkling top at dinner"></figure>
+        <figure class="hero-portrait portrait personal-photo">
+          <?php if ($photoAccess): ?>
+            <img src="image.php?id=hero" alt="La Davina Emilia in a sparkling top at dinner">
+          <?php else: ?>
+            <a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>A private glimpse</strong><small>Enter Emilia’s word to look closer</small></a>
+          <?php endif; ?>
+        </figure>
         <p class="hero-caption">The night grows more interesting when she arrives.</p>
       </section>
       <section class="about section" id="emilia">
         <div class="section-label"><span>01</span> The voice behind the wings</div>
         <div class="about-grid">
-          <div class="about-image photo-placeholder" role="img" aria-label="Placeholder for an editorial portrait of La Davina Emilia"><span>Portrait in her element<br><small>to be replaced</small></span></div>
+          <figure class="about-image personal-photo">
+            <?php if ($photoAccess): ?>
+              <img src="image.php?id=about" alt="La Davina Emilia by the water">
+            <?php else: ?>
+              <a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>Portrait in her element</strong><small>Enter Emilia’s word to look closer</small></a>
+            <?php endif; ?>
+          </figure>
           <div class="about-copy">
             <p class="eyebrow">A goddess of her own design</p><h2>Meet <em>Emilia.</em></h2>
             <p class="lead">“Let me tell you who I am, so you know exactly what you’re walking into.”</p>
@@ -51,9 +68,18 @@
       <section class="album section" id="album">
         <div class="album-heading"><div><div class="section-label"><span>03</span> Her adventures</div><h2>Proof that the world <em>looks better</em> in her company.</h2></div><p>An album in progress: cities, saddle paths, late tables, sunlit escapes, and every place Emilia has made memorable.</p></div>
         <div class="album-grid">
-          <figure class="album-photo album-tall photo-placeholder"><span>Travel portrait<br><small>to be replaced</small></span><figcaption>Somewhere worth arriving for.</figcaption></figure>
-          <figure class="album-photo photo-placeholder"><span>An adventure begins<br><small>to be replaced</small></span><figcaption>She always knows the way.</figcaption></figure>
-          <figure class="album-photo photo-placeholder"><span>A beautiful evening<br><small>to be replaced</small></span><figcaption>The table was waiting.</figcaption></figure>
+          <figure class="album-photo album-tall personal-photo">
+            <?php if ($photoAccess): ?><img src="image.php?id=travel" alt="La Davina Emilia in the city at dusk"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>Travel portrait</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
+            <figcaption>Somewhere worth arriving for.</figcaption>
+          </figure>
+          <figure class="album-photo personal-photo">
+            <?php if ($photoAccess): ?><img src="image.php?id=boat" alt="La Davina Emilia on a boat"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>An adventure begins</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
+            <figcaption>She always knows the way.</figcaption>
+          </figure>
+          <figure class="album-photo personal-photo">
+            <?php if ($photoAccess): ?><img src="image.php?id=table" alt="La Davina Emilia at a table with champagne"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>A beautiful evening</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
+            <figcaption>The table was waiting.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="journal section" id="journal">
@@ -66,7 +92,7 @@
       </section>
       <section class="contact" id="contact">
         <div><p class="eyebrow"><span aria-hidden="true">✦</span> A proper introduction</p><h2>Think you can keep <em>up?</em></h2></div>
-        <div class="contact-copy"><p>Send Emilia a message. Tell her who you are, what makes you interesting, and why you think you would be very good for her. Be respectful. Be generous. Be honest. And do not be boring.</p><a class="button button-light" href="mailto:ladavinaemilia@gmail.com">Send Emilia your introduction</a></div>
+        <div class="contact-copy"><p>Send Emilia a message. Tell her who you are, what makes you interesting, and why you think you would be very good for her. Be respectful. Be generous. Be honest. And do not be boring.</p><a class="button button-light" href="mailto:hi@ladavinaemilia.com">Send Emilia your introduction</a></div>
       </section>
     </main>
     <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a><p>Be good. Be curious. Be memorable.</p><div class="social-links"><a href="https://youpay.me/ladavinaemilia" target="_blank" rel="noreferrer">YouPay.Me</a><a href="https://throne.com/ladavinaemilia" target="_blank" rel="noreferrer">Throne</a><a href="https://x.com/LaDavinaEmilia" target="_blank" rel="noreferrer">X</a></div><small>© 2026 La Davina Emilia. All rights reserved.</small></footer>
