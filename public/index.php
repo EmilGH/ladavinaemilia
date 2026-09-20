@@ -33,6 +33,10 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
           <div class="hero-actions"><a class="button button-primary" href="#emilia">Meet Emilia</a><a class="text-link" href="#contact">Are you worthy of her time? <span aria-hidden="true">↗</span></a></div>
         </div>
         <figure class="hero-portrait portrait public-portrait">
+          <span class="frame-ornament frame-ornament-tl" aria-hidden="true">❦</span>
+          <span class="frame-ornament frame-ornament-tr" aria-hidden="true">❦</span>
+          <span class="frame-ornament frame-ornament-bl" aria-hidden="true">❦</span>
+          <span class="frame-ornament frame-ornament-br" aria-hidden="true">❦</span>
           <img src="assets/leg-pedestal.jpg" alt="La Davina Emilia’s tattooed leg against deep purple drapery">
         </figure>
         <p class="hero-caption">The night grows more interesting when she arrives.</p>
