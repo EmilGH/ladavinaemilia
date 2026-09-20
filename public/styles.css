@@ -42,7 +42,7 @@ nav a:not(.nav-contact):hover { border-color:var(--moon); color:var(--moon); }
 
 .moon { position:absolute; top:8%; right:8%; width:clamp(155px,20vw,300px); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 38% 36%,#fff7d8 0 4%,var(--moon) 23%,#d0b27b 72%,#a17754); box-shadow:0 0 70px rgba(242,221,175,.24); opacity:.86; }
 
-.cloud { position:absolute; width:48vw; height:8vw; min-height:80px; border-radius:50%; background:rgba(48,28,58,.85); filter:blur(10px); }
+.cloud { position:absolute; width:48vw; height:8vw; min-height:80px; border-radius:50%; background:linear-gradient(180deg,rgba(91,65,108,.7),rgba(35,20,48,.22)); filter:blur(12px); }
 
 .cloud::before,.cloud::after { content:""; position:absolute; bottom:-22%; width:58%; aspect-ratio:1.6; border-radius:50%; background:inherit; }
 
@@ -53,6 +53,10 @@ nav a:not(.nav-contact):hover { border-color:var(--moon); color:var(--moon); }
 .cloud-one { top:21%; right:-10%; transform:rotate(-7deg); }
 
 .cloud-two { top:55%; left:-24%; transform:rotate(4deg); opacity:.9; }
+
+.cloud-three { top:8%; left:-27%; width:42vw; opacity:.4; transform:rotate(8deg); }
+
+.cloud-four { right:-20%; bottom:3%; width:38vw; opacity:.36; transform:rotate(-8deg); }
 
 .star { position:absolute; color:var(--moon); opacity:.75; }
 
@@ -74,6 +78,12 @@ h1,h2,h3,p { margin-top:0; }
 h1,h2,h3 { font-family:var(--display); font-weight:500; line-height:.98; letter-spacing:-.045em; }
 
 h1 { max-width:720px; margin-bottom:1.75rem; font-size:clamp(3.4rem,6.4vw,6.8rem); }
+
+.hero h1 { max-width:650px; margin-bottom:1.35rem; color:var(--ivory); font-size:clamp(3rem,5.35vw,5.65rem); font-weight:500; line-height:1.03; text-wrap:balance; }
+
+.hero h1 em { display:block; width:fit-content; margin:.08em 0 0 clamp(.55rem,2.5vw,2.1rem); color:var(--lilac); font-family:"Cormorant Garamond",var(--display); font-size:1.09em; font-weight:500; letter-spacing:-.055em; line-height:.9; transform:rotate(-1.5deg); }
+
+.hero h1::after { content:""; display:block; width:clamp(4rem,10vw,8rem); height:1px; margin:1.15rem 0 0 .2rem; background:linear-gradient(90deg,rgba(242,221,175,.85),rgba(242,221,175,0)); }
 
 h1 em,h2 em { color:var(--lilac); font-weight:500; }
 

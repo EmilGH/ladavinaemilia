@@ -12,7 +12,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     <title>La Davina Emilia — Enter Her World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -25,7 +25,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     </header>
     <main id="main">
       <section class="hero" id="top">
-        <div class="celestial" aria-hidden="true"><span class="moon"></span><span class="cloud cloud-one"></span><span class="cloud cloud-two"></span><span class="star star-one">✦</span><span class="star star-two">✧</span><span class="star star-three">✦</span></div>
+        <div class="celestial" aria-hidden="true"><span class="moon"></span><span class="cloud cloud-one"></span><span class="cloud cloud-two"></span><span class="cloud cloud-three"></span><span class="cloud cloud-four"></span><span class="star star-one">✦</span><span class="star star-two">✧</span><span class="star star-three">✦</span></div>
         <div class="hero-copy">
           <p class="eyebrow"><span aria-hidden="true">✦</span> Enter her orbit</p>
           <h1>The moon does not ask to be noticed. <em>It simply pulls the tide.</em></h1>
@@ -65,8 +65,16 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
         <div class="worthiness-copy"><div class="section-label"><span>02</span> The invitation</div><p class="eyebrow">Before you step closer</p><h2>You believe you are <em>worthy?</em></h2><p class="lead">Emilia’s world is not entered by accident. It begins with a thoughtful introduction and a little proof that you know how to pay attention.</p><p>Complete her brief survey, answer honestly, and show her the person behind the screen. <em>The ones who stand out are never forgotten. They’re the ones I keep. 💋</em></p><a class="button button-primary" href="/survey-gate.php">Complete the survey</a></div>
       </section>
       <section class="quote-band" aria-label="Emilia quote"><span class="spark" aria-hidden="true">☾</span><blockquote>“Curiosity is welcome. Respect is required. The rest is earned.”</blockquote></section>
+      <section class="journal section" id="journal">
+        <div class="journal-heading"><div class="section-label"><span>03</span> Emilia’s journal</div><h2>Letters from the places where she <em>comes alive.</em></h2><p>Thoughts, adventures, small pleasures, and the stories she decides to share with those paying attention.</p></div>
+        <div class="journal-grid">
+          <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Notes from the road</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/art-gate.php"><span>Private collection</span><strong>The art of being unforgettable</strong><i>Read the lessons <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/reads.php"><span>Emilia’s library</span><strong>The Goddess Reads</strong><i>Browse her shelves <span aria-hidden="true">↗</span></i></a>
+        </div>
+      </section>
       <section class="album section" id="album">
-        <div class="album-heading"><div><div class="section-label"><span>03</span> Her adventures</div><h2>Proof that the world <em>looks better</em> in her company.</h2></div><p>An album in progress: cities, saddle paths, late tables, sunlit escapes, and every place Emilia has made memorable. <a class="text-link" href="/album.php">Open the full gallery <span aria-hidden="true">↗</span></a></p></div>
+        <div class="album-heading"><div><div class="section-label"><span>04</span> Her adventures</div><h2>Proof that the world <em>looks better</em> in her company.</h2></div><p>An album in progress: cities, saddle paths, late tables, sunlit escapes, and every place Emilia has made memorable. <a class="text-link" href="/album.php">Open the full gallery <span aria-hidden="true">↗</span></a></p></div>
         <div class="album-grid">
           <figure class="album-photo album-tall personal-photo">
             <?php if ($photoAccess): ?><img src="image.php?id=travel" alt="La Davina Emilia in the city at dusk"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>Travel portrait</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
@@ -80,14 +88,6 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
             <?php if ($photoAccess): ?><img src="image.php?id=table" alt="La Davina Emilia at a table with champagne"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>A beautiful evening</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
             <figcaption>The table was waiting.</figcaption>
           </figure>
-        </div>
-      </section>
-      <section class="journal section" id="journal">
-        <div class="journal-heading"><div class="section-label"><span>04</span> Emilia’s journal</div><h2>Letters from the places where she <em>comes alive.</em></h2><p>Thoughts, adventures, small pleasures, and the stories she decides to share with those paying attention.</p></div>
-        <div class="journal-grid">
-          <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Notes from the road</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="/art-gate.php"><span>Private collection</span><strong>The art of being unforgettable</strong><i>Read the lessons <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="/reads.php"><span>Emilia’s library</span><strong>The Goddess Reads</strong><i>Browse her shelves <span aria-hidden="true">↗</span></i></a>
         </div>
       </section>
       <section class="contact" id="contact">
