@@ -60,6 +60,7 @@ $existingEntries = [
             'And a very good boy somewhere paying for the wine without ever knowing which vineyard. 💋',
         ],
     ],
+];
 $existingEntries['fleur-de-lis']['eyebrow'] = 'Journal entry #3';
 $existingEntries['jungle-moves']['eyebrow'] = 'Journal entry #4';
 $existingEntries['bad-bunny-in-paris']['eyebrow'] = 'Journal entry #5';
