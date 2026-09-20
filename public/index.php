@@ -62,7 +62,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
       </section>
       <section class="worthiness section" id="survey">
         <div class="worthiness-mark" aria-hidden="true"><span>☾</span><i>✦</i><b>✧</b></div>
-        <div class="worthiness-copy"><div class="section-label"><span>02</span> The invitation</div><p class="eyebrow">Before you step closer</p><h2>You believe you are <em>worthy?</em></h2><p class="lead">Emilia’s world is not entered by accident. It begins with a thoughtful introduction and a little proof that you know how to pay attention.</p><p>Complete her brief survey, answer honestly, and show her the person behind the screen. The ones who stand out are never forgotten.</p><a class="button button-primary" href="https://tinyurl.com/DavinaEmiliaSurvey" target="_blank" rel="noreferrer">Complete the survey</a></div>
+        <div class="worthiness-copy"><div class="section-label"><span>02</span> The invitation</div><p class="eyebrow">Before you step closer</p><h2>You believe you are <em>worthy?</em></h2><p class="lead">Emilia’s world is not entered by accident. It begins with a thoughtful introduction and a little proof that you know how to pay attention.</p><p>Complete her brief survey, answer honestly, and show her the person behind the screen. The ones who stand out are never forgotten.</p><a class="button button-primary" href="/survey-gate.php">Complete the survey</a></div>
       </section>
       <section class="quote-band" aria-label="Emilia quote"><span class="spark" aria-hidden="true">☾</span><blockquote>“Curiosity is welcome. Respect is required. The rest is earned.”</blockquote></section>
       <section class="album section" id="album">
