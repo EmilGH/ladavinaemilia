@@ -87,7 +87,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
         <div class="journal-grid">
           <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Notes from the road</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
           <a class="journal-item" href="/art-gate.php"><span>Private collection</span><strong>The art of being unforgettable</strong><i>Read the lessons <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="#contact"><span>Coming soon</span><strong>More stories to come</strong><i>Stay in her orbit <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/reads.php"><span>Emilia’s library</span><strong>The Goddess Reads</strong><i>Browse her shelves <span aria-hidden="true">↗</span></i></a>
         </div>
       </section>
       <section class="contact" id="contact">

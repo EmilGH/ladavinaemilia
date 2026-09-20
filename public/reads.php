@@ -1,0 +1,22 @@
+<?php
+declare(strict_types=1);
+
+$books = [];
+$library = fopen(__DIR__ . '/kindle-unlimited-library.csv', 'r');
+if ($library === false) {
+    http_response_code(500);
+    exit('The library is resting. Please return soon.');
+}
+fgetcsv($library);
+while (($book = fgetcsv($library)) !== false) {
+    if (count($book) >= 6) {
+        $books[] = $book;
+    }
+}
+fclose($library);
+$currentBooks = array_values(array_filter($books, static fn (array $book): bool => $book[4] === 'Current'));
+function escape_read(string $value): string { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
+?>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Goddess Reads — La Davina Emilia</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body class="journal-page"><header class="survey-header"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a><span>Her reading room</span></header><main class="journal-shell"><section class="journal-intro"><p class="eyebrow">Emilia’s library</p><h1>The Goddess <em>Reads.</em></h1><p>A well-read goddess is never without a story, a standard, or a reason to stay up late.</p></section><section class="reads-current"><p class="eyebrow">On her nightstand</p><h2>Currently <em>borrowed.</em></h2><p><?= count($currentBooks) ?> titles are with Emilia now. The rest are proof that she has always known exactly what she likes.</p><div class="reads-current-grid"><?php foreach ($currentBooks as $book): ?><article><span><?= escape_read($book[3]) ?></span><strong><?= escape_read($book[1]) ?></strong><small>by <?= escape_read($book[2]) ?></small></article><?php endforeach; ?></div></section><section class="reads-library"><div class="reads-library-heading"><div><p class="eyebrow">The full collection</p><h2><?= count($books) ?> books and counting.</h2></div><a class="text-link" href="/kindle-unlimited-library.csv" download>Download the library <span aria-hidden="true">↗</span></a></div><label class="reads-search" for="book-search"><span>Find a title or author</span><input id="book-search" type="search" placeholder="Search her shelves"></label><div class="reads-table-wrap"><table><thead><tr><th>Title</th><th>Author</th><th>Borrowed</th><th>Status</th></tr></thead><tbody><?php foreach ($books as $book): ?><tr data-book-row><td><?= escape_read($book[1]) ?></td><td><?= escape_read($book[2]) ?></td><td><?= escape_read($book[3]) ?></td><td><span class="read-status <?= $book[4] === 'Current' ? 'is-current' : '' ?>"><?= escape_read($book[4]) ?></span></td></tr><?php endforeach; ?></tbody></table></div><p class="reads-results" id="book-results"></p></section><section class="journal-comments reads-comments" aria-labelledby="reads-comment"><p class="eyebrow" id="reads-comment">Leave a word</p><a class="tribute-inline" href="https://youpay.me/ladavinaemilia" target="_blank" rel="noreferrer"><span aria-hidden="true">✦</span><span>Before you leave a word, leave a little tribute for Emilia.</span><span aria-hidden="true">↗</span></a><form action="/reads-comment-submit.php" method="post"><label for="name">What should Emilia call you?</label><input id="name" name="name" type="text" maxlength="120" required><label for="comment">Your comment</label><textarea id="comment" name="comment" rows="5" maxlength="3000" required></textarea><button class="button button-primary" type="submit">Send your comment</button></form><p class="comment-note">Comments are reviewed by your Goddess before they appear here.</p></section></main><script>const search=document.querySelector('#book-search'),rows=[...document.querySelectorAll('[data-book-row]')],results=document.querySelector('#book-results');const filter=()=>{const value=search.value.trim().toLowerCase();let visible=0;rows.forEach(row=>{const match=row.textContent.toLowerCase().includes(value);row.hidden=!match;if(match)visible++;});results.textContent=value?`${visible.toLocaleString()} ${visible===1?'book':'books'} found.`:'';};search.addEventListener('input',filter);</script></body></html>
