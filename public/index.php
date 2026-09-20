@@ -32,12 +32,8 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
           <p class="hero-intro">La Davina Emilia is a goddess of beautiful standards, far horizons, and attention that is always earned.</p>
           <div class="hero-actions"><a class="button button-primary" href="#emilia">Meet Emilia</a><a class="text-link" href="#contact">Are you worthy of her time? <span aria-hidden="true">↗</span></a></div>
         </div>
-        <figure class="hero-portrait portrait personal-photo">
-          <?php if ($photoAccess): ?>
-            <img src="image.php?id=hero" alt="La Davina Emilia in a sparkling top at dinner">
-          <?php else: ?>
-            <a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>A private glimpse</strong><small>Enter Emilia’s word to look closer</small></a>
-          <?php endif; ?>
+        <figure class="hero-portrait portrait public-portrait">
+          <img src="assets/leg-pedestal.jpg" alt="La Davina Emilia’s tattooed leg against deep purple drapery">
         </figure>
         <p class="hero-caption">The night grows more interesting when she arrives.</p>
       </section>
