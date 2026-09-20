@@ -20,7 +20,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     <header class="site-header">
       <a class="brand" href="#top" aria-label="La Davina Emilia, home"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#emilia">Emilia</a><a href="#album">Adventures</a><a href="#journal">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
+        <a href="#emilia">Emilia</a><a href="#album">Adventures</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
       </nav>
     </header>
     <main id="main">
@@ -85,9 +85,9 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
       <section class="journal section" id="journal">
         <div class="journal-heading"><div class="section-label"><span>04</span> Emilia’s journal</div><h2>Letters from the places where she <em>comes alive.</em></h2><p>Thoughts, adventures, small pleasures, and the stories she decides to share with those paying attention.</p></div>
         <div class="journal-grid">
-          <a class="journal-item" href="#contact"><span>Coming soon</span><strong>Notes from the road</strong><i>Read the journal <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="#contact"><span>Coming soon</span><strong>The art of being unforgettable</strong><i>Read the journal <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="#contact"><span>Coming soon</span><strong>A goddess’s reading list</strong><i>Read the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Fleur de Lis</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/journal-gate.php#jungle-moves"><span>Now reading</span><strong>Jungle Moves</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/journal-gate.php#bad-bunny-in-paris"><span>Now reading</span><strong>Bad Bunny in Paris</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
         </div>
       </section>
       <section class="contact" id="contact">

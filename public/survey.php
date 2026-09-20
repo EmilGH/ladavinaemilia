@@ -26,7 +26,8 @@ $questions = require __DIR__ . '/survey-common.php';
         <?php foreach ($questions as $key => $question): ?>
           <div class="survey-question">
             <label for="<?= htmlspecialchars($key, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($question, ENT_QUOTES, 'UTF-8') ?></label>
-            <textarea id="<?= htmlspecialchars($key, ENT_QUOTES, 'UTF-8') ?>" name="<?= htmlspecialchars($key, ENT_QUOTES, 'UTF-8') ?>" rows="4" maxlength="5000" required></textarea>
+            <textarea id="<?= htmlspecialchars($key, ENT_QUOTES, 'UTF-8') ?>" name="<?= htmlspecialchars($key, ENT_QUOTES, 'UTF-8') ?>" rows="4" maxlength="20000" data-word-limit="2000" required></textarea>
+            <p class="survey-limit"><span>0</span> / 2,000 words</p>
           </div>
         <?php endforeach; ?>
         <label class="consent"><input name="adult_consent" type="checkbox" value="yes" required><span>I confirm that I am at least 18 years old and that I am voluntarily sharing these answers with La Davina Emilia.</span></label>
@@ -34,5 +35,25 @@ $questions = require __DIR__ . '/survey-common.php';
         <p class="survey-privacy">Your responses are sent as a private CSV attachment to Emilia and are not stored on this website.</p>
       </form>
     </main>
+    <script>
+      const countWords = value => (value.trim().match(/\S+/g) || []).length;
+      document.querySelectorAll('[data-word-limit]').forEach(field => {
+        const limit = Number(field.dataset.wordLimit);
+        const counter = field.nextElementSibling.querySelector('span');
+        const update = () => {
+          const count = countWords(field.value);
+          counter.textContent = count.toLocaleString();
+          field.parentElement.classList.toggle('over-limit', count > limit);
+        };
+        field.addEventListener('input', update);
+        update();
+      });
+      document.querySelector('.survey-form').addEventListener('submit', event => {
+        if ([...document.querySelectorAll('[data-word-limit]')].some(field => countWords(field.value) > Number(field.dataset.wordLimit))) {
+          event.preventDefault();
+          document.querySelector('.over-limit textarea').focus();
+        }
+      });
+    </script>
   </body>
 </html>

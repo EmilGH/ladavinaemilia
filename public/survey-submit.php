@@ -15,7 +15,8 @@ if (($_POST['adult_consent'] ?? '') !== 'yes') {
 $answers = [];
 foreach ($questions as $key => $question) {
     $answer = trim((string) ($_POST[$key] ?? ''));
-    if ($answer === '' || strlen($answer) > 5000) {
+    $wordCount = preg_match_all('/\S+/u', $answer);
+    if ($answer === '' || $wordCount === false || $wordCount > 2000) {
         http_response_code(422);
         exit('Please answer every question before sending.');
     }
