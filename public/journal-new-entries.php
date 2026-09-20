@@ -78,4 +78,87 @@ return [
             'Consider this the soft announcement. The hard one will come when there’s a key in my hand in a city you don’t know yet. 💋',
         ],
     ],
+    'the-homeland-you-carry-puerto-rico' => [
+        'title' => 'The Homeland You Carry (Puerto Rico)',
+        'date' => 'Puerto Rico',
+        'eyebrow' => 'Journal entry #8',
+        'paragraphs' => [
+            <<<'TEXT'
+I've been avoiding writing this one, which is how I knew I had to.
+TEXT,
+            <<<'TEXT'
+Everyone assumes the art of being unforgettable is about rooms and cities and strangers. It is. But there's a version of it that's harder, and I've been circling it for months: what do you do when the place that made you is the one place you can't casually return to?
+TEXT,
+            <<<'TEXT'
+Puerto Rico is my homeland. I say that word carefully, because "homeland" isn't where you were born, necessarily. It's the place that built your bones. The jungle, green and loud and alive in a way that makes every other forest feel like a suggestion. The beaches, the real ones, the ones locals go to, where the water is warm as bathwater and the sunset does things the sky has no business doing. The cities, the music spilling out of cars and doorways, the food, the culture that survives everything and still somehow knows how to dance.
+TEXT,
+            <<<'TEXT'
+And I miss it. Deeply. Constantly.
+TEXT,
+            <<<'TEXT'
+Here's the part that aches: the last time I went home was for a funeral. And the time before that, a funeral. It's always for a funeral. That's the pattern for so many of us in the diaspora, we return to the island in our darkest hours, dressed in black, grieving, and we leave before we ever get to be joyful there. The island gets our sorrow and never our summers. I carry that. Some of you who are also from somewhere else know exactly what I mean, and I'm not going to pretend it doesn't sit heavy.
+TEXT,
+            <<<'TEXT'
+And I don't know when I'll be back.
+TEXT,
+            <<<'TEXT'
+Because I have to say the other part plainly, without softening it: the United States has been, and continues to be, terrible to Puerto Rico. I won't write you an essay, but I won't pretend otherwise either. The debt, the storms, the neglect, the way the island's crises get treated as footnotes while its people keep giving and giving, to the military, to the culture, to this country, and receiving so little back. We are citizens on paper and afterthoughts in practice. Watching it from the outside, from my life of comfort and freedom of movement, is its own particular guilt, because I could be there and I'm not, and the people who can't leave are the ones carrying the weight.
+TEXT,
+            <<<'TEXT'
+So I root. That's what's left, some seasons. I root for the survival of this island, loudly, the way I root for everything I love. The island has survived colonization, hurricanes, earthquakes, extraction, and every attempt to erase it, and it's still here, still producing music the whole world dances to, still producing people with a warmth you can't manufacture, still producing, for the record, me.
+TEXT,
+            <<<'TEXT'
+You don't have to stand in a place to be unforgettable from it. I am Puerto Rican in every room I walk into, in every city on my itinerary. It's in how I take up space, how I feed people, how I grieve loudly and love loudly and never once shrink. I am the island's ambassador in places that have never heard of the towns my family comes from. Every stranger in every lounge and club and vineyard who meets me and thinks who is that woman is meeting Puerto Rico. The island travels with me. It's the ink underneath the ink.
+TEXT,
+            <<<'TEXT'
+The homeland you carry doesn't need a passport stamp. You are the stamp.
+TEXT,
+            <<<'TEXT'
+I'll be back, Puerto Rico. Next time, let it be for a party. 🖤
+TEXT,
+        ],
+    ],
+    'reclaiming-the-ritual-merida' => [
+        'title' => 'Reclaiming the Ritual (Mérida, Día de los Muertos)',
+        'date' => 'Mérida',
+        'eyebrow' => 'Journal entry #9',
+        'paragraphs' => [
+            <<<'TEXT'
+I am counting down the days.
+TEXT,
+            <<<'TEXT'
+I'm going to Mérida for Día de los Muertos. And I mean going: dressed up, all in, immersed, a full week of it. The food, the ofrendas, the marigolds, the music, the whole beautiful thing. And I want to tell you why this trip matters to me on a level that goes deeper than festivals usually go.
+TEXT,
+            <<<'TEXT'
+Puerto Rico is my homeland, and I love it completely. But I have to be honest about what colonization stole, because you can't love a place honestly without counting its losses. Puerto Ricans were colonized incredibly thoroughly, first by Spain, then by the United States, and between the two of them, we lost so much of our original culture. Our language, gone. So much of our mythology, thinned to fragments. The Taíno threads that survived did so in pieces, in words and food and faces and stubborn little customs nobody remembers the origin of anymore. I grew up loving a homeland that is itself a survivor, and beautiful, and incomplete, and I feel that incompleteness the way you feel a missing tooth.
+TEXT,
+            <<<'TEXT'
+So here's what I know about Día de los Muertos, and why I'm flying to Mexico instead of just admiring it from afar:
+TEXT,
+            <<<'TEXT'
+Puerto Rico's indigenous mythos was Taíno in nature, and the Taíno world was deeply connected to the wider web of indigenous belief systems across the Caribbean and the Americas, beliefs about ancestors, about the dead remaining near the living, about cycles rather than endings. And Día de los Muertos, at its root, is the great indigenous celebration of exactly that: the dead are not gone, they return, they sit with you, you feed them and dance for them and keep them alive by remembering. So I wouldn't be surprised at all if the Taíno, my ancestors, had their own version of this. Their own days of the dead. Their own marigolds, whatever form they took. And if they did, it was taken from us before anyone thought to write it down.
+TEXT,
+            <<<'TEXT'
+Which brings me to Mérida.
+TEXT,
+            <<<'TEXT'
+I can't recover what Puerto Rico lost. Nobody can, and I don't trust any government or institution to do it either. But here is what I can do, and what I'm doing: I can go stand inside a living version of what my ancestors might have had. I can put on the dress and the face and sit in a plaza full of cempasúchil and eat food that took days to prepare and watch an entire city love its dead out loud. I can borrow the ritual back. I can experience the thing my own culture was robbed of, and bring the feeling of it home with me, into whatever I build and whatever I pass on.
+TEXT,
+            <<<'TEXT'
+Yucatán, for the record, is the perfect place for this, because the Yucatec Maya have their own relationship with the Day of the Dead, Hanal Pixán, the food of the souls, and Mérida celebrates it with a depth and pride that I'm told fills the whole city. There's something that moves me enormously about that: another indigenous nation, colonized by the same empire, keeping its relationship with its dead alive anyway. Every ofrenda in Mérida is, to me, evidence of something: they couldn't actually erase us. They tried everywhere. They're still trying in some places. And the ancestors keep coming back anyway, once a year, invited, fed, adored.
+TEXT,
+            <<<'TEXT'
+So yes, I'm excited. Excited to dress up and be gorgeous and eat like a woman who means it. Excited for the pan de muerto and the cochinita pibil and the marquesitas and everything I haven't discovered yet. Excited to be a tattooed goddess wandering a city lit entirely in orange and purple. But underneath the excitement is something quieter and bigger: I'm going to a celebration of remembrance, to remember the culture I was owed.
+TEXT,
+            <<<'TEXT'
+The unforgettable don't just get remembered. They do the remembering. They carry what was taken, they celebrate what survived, and they walk into other people's sacred places with respect and open hands and learn the rituals their ancestors would have danced.
+TEXT,
+            <<<'TEXT'
+Mérida, I'm coming. Set a place for me at the ofrenda.
+TEXT,
+            <<<'TEXT'
+I'll set one for my Taíno ancestors when I get home. 🖤
+TEXT,
+        ],
+    ],
 ];

@@ -74,4 +74,6 @@ return [
     'bad-bunny-in-paris' => $existingEntries['bad-bunny-in-paris'],
     'pages-on-my-arm' => $newEntries['pages-on-my-arm'],
     'destination-with-my-name-on-it' => $newEntries['destination-with-my-name-on-it'],
+    'the-homeland-you-carry-puerto-rico' => $newEntries['the-homeland-you-carry-puerto-rico'],
+    'reclaiming-the-ritual-merida' => $newEntries['reclaiming-the-ritual-merida'],
 ];
