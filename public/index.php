@@ -85,9 +85,9 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
       <section class="journal section" id="journal">
         <div class="journal-heading"><div class="section-label"><span>04</span> Emilia’s journal</div><h2>Letters from the places where she <em>comes alive.</em></h2><p>Thoughts, adventures, small pleasures, and the stories she decides to share with those paying attention.</p></div>
         <div class="journal-grid">
-          <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Fleur de Lis</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="/journal-gate.php#jungle-moves"><span>Now reading</span><strong>Jungle Moves</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
-          <a class="journal-item" href="/journal-gate.php#bad-bunny-in-paris"><span>Now reading</span><strong>Bad Bunny in Paris</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/journal-gate.php"><span>Now reading</span><strong>Notes from the road</strong><i>Open the journal <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="/art-gate.php"><span>Private collection</span><strong>The art of being unforgettable</strong><i>Read the lessons <span aria-hidden="true">↗</span></i></a>
+          <a class="journal-item" href="#contact"><span>Coming soon</span><strong>More stories to come</strong><i>Stay in her orbit <span aria-hidden="true">↗</span></i></a>
         </div>
       </section>
       <section class="contact" id="contact">
