@@ -16,7 +16,7 @@ $entries = require __DIR__ . '/journal-common.php';
   <body class="journal-page">
     <header class="survey-header"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a><span>Notes from the road</span></header>
     <main class="journal-shell">
-      <section class="journal-intro"><p class="eyebrow">Emilia’s journal</p><h1>Notes from the places that made her <em>stay awhile.</em></h1><p>Three moments, kept in her own words. Read them carefully.</p></section>
+      <section class="journal-intro"><p class="eyebrow">Emilia’s journal</p><h1>Notes from the places that made her <em>stay awhile.</em></h1><p>The most memorable moments, kept in her own words. Read them carefully.</p></section>
       <nav class="journal-nav" aria-label="Journal entries"><?php foreach ($entries as $slug => $entry): ?><a href="#<?= htmlspecialchars($slug, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($entry['title'], ENT_QUOTES, 'UTF-8') ?></a><?php endforeach; ?></nav>
       <?php foreach ($entries as $slug => $entry): ?>
         <article class="journal-entry" id="<?= htmlspecialchars($slug, ENT_QUOTES, 'UTF-8') ?>">
