@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-return [
+$existingEntries = [
     'fleur-de-lis' => [
         'title' => 'Fleur de Lis',
         'date' => 'October',
@@ -60,4 +60,17 @@ return [
             'And a very good boy somewhere paying for the wine without ever knowing which vineyard. 💋',
         ],
     ],
+$existingEntries['fleur-de-lis']['eyebrow'] = 'Journal entry #3';
+$existingEntries['jungle-moves']['eyebrow'] = 'Journal entry #4';
+$existingEntries['bad-bunny-in-paris']['eyebrow'] = 'Journal entry #5';
+$newEntries = require __DIR__ . '/journal-new-entries.php';
+
+return [
+    'stone-cathedral-below' => $newEntries['stone-cathedral-below'],
+    'jfk-first-class-lounge-rated' => $newEntries['jfk-first-class-lounge-rated'],
+    'fleur-de-lis' => $existingEntries['fleur-de-lis'],
+    'jungle-moves' => $existingEntries['jungle-moves'],
+    'bad-bunny-in-paris' => $existingEntries['bad-bunny-in-paris'],
+    'pages-on-my-arm' => $newEntries['pages-on-my-arm'],
+    'destination-with-my-name-on-it' => $newEntries['destination-with-my-name-on-it'],
 ];
