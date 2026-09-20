@@ -20,7 +20,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     <header class="site-header">
       <a class="brand" href="#top" aria-label="La Davina Emilia, home"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#emilia">Emilia</a><a href="#album">Adventures</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
+        <a href="#emilia">Emilia</a><a href="/album.php">Adventures</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
       </nav>
     </header>
     <main id="main">
@@ -66,7 +66,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
       </section>
       <section class="quote-band" aria-label="Emilia quote"><span class="spark" aria-hidden="true">☾</span><blockquote>“Curiosity is welcome. Respect is required. The rest is earned.”</blockquote></section>
       <section class="album section" id="album">
-        <div class="album-heading"><div><div class="section-label"><span>03</span> Her adventures</div><h2>Proof that the world <em>looks better</em> in her company.</h2></div><p>An album in progress: cities, saddle paths, late tables, sunlit escapes, and every place Emilia has made memorable.</p></div>
+        <div class="album-heading"><div><div class="section-label"><span>03</span> Her adventures</div><h2>Proof that the world <em>looks better</em> in her company.</h2></div><p>An album in progress: cities, saddle paths, late tables, sunlit escapes, and every place Emilia has made memorable. <a class="text-link" href="/album.php">Open the full gallery <span aria-hidden="true">↗</span></a></p></div>
         <div class="album-grid">
           <figure class="album-photo album-tall personal-photo">
             <?php if ($photoAccess): ?><img src="image.php?id=travel" alt="La Davina Emilia in the city at dusk"><?php else: ?><a class="private-photo-gate" href="gate.php?return=<?= rawurlencode($_SERVER['REQUEST_URI']) ?>"><span aria-hidden="true">✦</span><strong>Travel portrait</strong><small>Enter Emilia’s word to look closer</small></a><?php endif; ?>
