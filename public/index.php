@@ -37,6 +37,8 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
           <span class="frame-ornament frame-ornament-tr" aria-hidden="true">❦</span>
           <span class="frame-ornament frame-ornament-bl" aria-hidden="true">❦</span>
           <span class="frame-ornament frame-ornament-br" aria-hidden="true">❦</span>
+          <span class="frame-cartouche frame-cartouche-top" aria-hidden="true">❦&nbsp;✦&nbsp;❦</span>
+          <span class="frame-cartouche frame-cartouche-bottom" aria-hidden="true">❦&nbsp;✦&nbsp;❦</span>
           <img src="assets/leg-pedestal.jpg" alt="La Davina Emilia’s tattooed leg against deep purple drapery">
         </figure>
         <p class="hero-caption">The night grows more interesting when she arrives.</p>
