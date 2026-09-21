@@ -33,4 +33,5 @@ return [
     'why_pick_you' => 'In one paragraph: why should I pick you?',
     'first_send' => 'What’s the first thing you’d send me, and why?',
     'finish_sentence' => 'Finish this sentence: “I want to be good for you because…”',
+    'questions_for_emilia' => 'Do you have any questions for me? I promise you can ask me anything.',
 ];
