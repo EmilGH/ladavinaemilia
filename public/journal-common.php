@@ -67,6 +67,24 @@ $existingEntries['bad-bunny-in-paris']['eyebrow'] = 'Journal entry #5';
 $newEntries = require __DIR__ . '/journal-new-entries.php';
 
 return [
+    'the-blue-box-birthday' => [
+        'title' => 'The Blue Box Birthday',
+        'date' => 'New York City',
+        'eyebrow' => 'Journal entry #1',
+        'paragraphs' => [
+            'I turned thirty at the Tiffany & Co. NYC Flagship Blue Box Café, almost four years ago now, and I’ve decided that’s when my twenties officially ended. Not at midnight. Not with the candles. At the café, in that specific shade of blue that costs extra everywhere else in the world but there, where it’s just the color. We have history, me and this blue. So much history.',
+            'Here’s what nobody tells you about turning thirty: it doesn’t feel like an ending. It feels like a receipt. You look up from the table and realize every version of you that ever doubted herself is gone, and what’s left is a woman who books a jewelry café for her own birthday because she never needed anyone else to.',
+            'I walked in knowing exactly what I was doing. This was a self-inflicted shopping spree, premeditated, unapologetic, planned the way I plan everything now: with intention and a budget line. Over $5,000 on jewelry in one afternoon. I tried things on and looked at myself in the mirror and made my decisions like a woman signing legislation. Yes. No. Yes. Definitely yes. The sales associates earned their commission that day, and I earned mine.',
+            'And then, because the era demanded it, tea. Proper tea, in that little blue box of a café, surrounded by other people’s birthdays and engagements and anniversaries, all of them wondering who I was there with.',
+            'Nobody. I was there with me. That was the whole point.',
+            'The waiter took a photo of me in my black corset, crown, and cat-eye shades à la Audrey Hepburn for “the apps.” He was so sweet about it, so careful, angling the phone like a professional, making sure the jewelry was in frame and the blue was behind me. And I sat there, glowing, five thousand dollars heavier around the wrists and throat, smiling for a stranger’s camera, thinking:',
+            'If only you knew.',
+            'If only he knew which apps. If only he knew that this haul, every piece of it, was paid for by the devotion of men who will never know my real order at the café but know exactly what I like in the dark. If only he knew that the men funding this table send tributes just to see this version of me: unhurried, bejeweled, drinking tea that costs more than their lunch, entirely because I decided thirty years ago was enough waiting around to be celebrated by anyone else’s schedule.',
+            'That photo exists somewhere in my camera roll still. Me, the blue, the tea, the haul. A woman at the beginning of her most expensive decade.',
+            'Some women get jewelry for their birthday.',
+            'I became the kind of woman jewelry is made for. 💋',
+        ],
+    ],
     'stone-cathedral-below' => $newEntries['stone-cathedral-below'],
     'jfk-first-class-lounge-rated' => $newEntries['jfk-first-class-lounge-rated'],
     'fleur-de-lis' => $existingEntries['fleur-de-lis'],
