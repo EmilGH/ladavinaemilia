@@ -14,6 +14,14 @@ body { margin:0; background:var(--night); color:var(--ivory); font-family:var(--
 
 @media (min-width:781px) { html.home-page { font-size:96%; } }
 
+@media (min-width:781px) {
+  html.home-page .site-header { padding:1rem clamp(1.041667rem,5vw,4.166667rem); }
+  html.home-page .brand { font-size:.966667rem; }
+  html.home-page nav { gap:clamp(.625rem,2.5vw,1.916667rem); font-size:.7rem; }
+  html.home-page .nav-contact,
+  html.home-page .nav-intake { padding:.541667rem .75rem; }
+}
+
 
 a { color:inherit; text-decoration:none; }
 
