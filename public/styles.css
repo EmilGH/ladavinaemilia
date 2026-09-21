@@ -28,7 +28,7 @@ a { color:inherit; text-decoration:none; }
 .brand-mark,.spark { color:var(--moon); font-size:1.15em; }
 
 
-nav { display:flex; align-items:center; gap:clamp(.75rem,2.5vw,2.3rem); font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; }
+nav { display:flex; align-items:center; gap:clamp(.75rem,2.5vw,2.3rem); font-size:.84rem; letter-spacing:.12em; text-transform:uppercase; }
 
 
 nav a:not(.nav-contact):not(.nav-intake) { border-bottom:1px solid transparent; }

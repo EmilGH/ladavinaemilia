@@ -23,12 +23,12 @@
         <div class="start-prose">
           <p>So you're new.</p>
           <p>Good. Breathe. You're doing fine.</p>
-          <p>Every man who belongs to me started exactly where you're standing right now: nervous, eager, and not entirely sure what happens next. Here's what happens next, in order, and the order matters:</p>
+          <p>Everyone who belongs to me started exactly where you're standing right now: nervous, eager, and not entirely sure what happens next. Here's what happens next, in order, and the order matters:</p>
           <ol class="start-steps">
             <li><strong>Step One: <a href="/rules.php">Read the Rules.</a></strong> All of them. There are three. If you have a problem with any of them, this is where we part ways, and I mean that warmly.</li>
             <li><strong>Step Two: Fill out my intake.</strong> I don't guess about my Subs. I learn them. The intake tells me who you are, what you're looking for, and where your lines are, so I always know how to take care of you, and so you never have to wonder if you're safe with me. Answer honestly. Answer completely. How you fill it out tells me more than anything you could ever type.</li>
             <li><strong>Step Three: Send your first tribute.</strong> Once your intake is in front of me and I like what I read, you'll send your first tribute through one of my tribute avenues. This isn't payment for services. This is an introduction. It's you saying, in the only language that counts: “I'm serious, Goddess.”</li>
-            <li><strong>Step Four: You wait.</strong> Gracefully. I read every intake personally, and I respond to the ones who did it properly. The men who complete all four steps carefully are, statistically, the men who end up kept. The men who skip steps are, statistically, men I never think about again.</li>
+            <li><strong>Step Four: You wait.</strong> Gracefully. I read every intake personally, and I respond to the ones who did it properly. Those who complete all four steps carefully are, statistically, the ones who end up kept. Those who skip steps are, statistically, people I never think about again.</li>
           </ol>
           <p>One more thing, because I know some of you are nervous:</p>
           <p>You don't need experience. You don't need to know the language yet. You don't need anything except honesty and the willingness to follow instructions from the very start. Good boys who do it right get rewarded for it later. 💋</p>

@@ -26,7 +26,7 @@
         <p>If you've completed the intake: you'll hear from me if I like what I read. I know that's hard. Waiting gracefully is the second thing I'll ever teach you.</p>
         <p>If you're an existing Sub: you know how to reach me, and you know that “hey” is not a message, it's a noise.</p>
         <p>If you have a business inquiry: partnerships, features, collaborations, use the email below with <em>Business</em> in the subject line and make your first sentence worth my time. I respond to professional inquiries the way I respond to everything: properly, and on my schedule.</p>
-        <p>One instruction, for everyone: whatever you write, write it like a man who's about to be evaluated by the most interesting woman he'll contact this year. Because you are.</p>
+        <p>One instruction, for everyone: whatever you write, write it like someone who's about to be evaluated by the most interesting woman they'll contact this year. Because you are.</p>
         <a class="button button-primary" href="mailto:Hi@davinaemilia.com">Write to Emilia <span aria-hidden="true">↗</span></a>
         <p class="ways-signoff">The moon doesn't chase. But she always answers the tide that comes to her properly. 💋</p>
       </div>
