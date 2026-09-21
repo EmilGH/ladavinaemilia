@@ -4,7 +4,7 @@ session_start();
 $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="en" class="home-page">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
