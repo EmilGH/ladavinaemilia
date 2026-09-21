@@ -14,7 +14,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
-    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a class="nav-intake" href="/survey-gate.php">Begin Intake</a><a href="/what-i-offer.php" aria-current="page">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a></nav>
+    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a class="nav-intake" href="/survey-gate.php">Begin Intake</a><a href="/what-i-offer.php" aria-current="page">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="#kept-dynamic">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a></nav>
   </header>
   <main id="main" class="worship-shell">
     <article class="worship-letter offer-letter">
@@ -54,13 +54,11 @@
         <p>Dick ratings, cum ratings, body ratings, photo ratings, whatever you're brave enough to send. This isn't a grade, it's a reaction, detailed, specific, personal, and delivered the way a woman reacts when she's actually looking. I've been told my ratings are unusually thorough. I've been told a few other things too, but we'll keep it tasteful on the website.</p>
         <p>A rating is the best lead-in there is. Men who book one almost always want more afterward, and I almost always want to give it to them, provided they've behaved.</p>
         <p><strong>Available to:</strong> all vetted men. Ratings are one of the easiest ways to introduce yourself to my attention.</p>
-        <h2>The Kept <em>Dynamic.</em></h2>
-        <p>This is the one that matters. Everything above is an offering. This is a relationship.</p>
-        <p>A kept Sub belongs to me on an ongoing basis. Consistent tributes, consistent service, my consistency in return. Priority replies. Voice notes between sessions. Tasks that are actually about you. My travel diaries before they're public. The woman behind the goddess, which is the privilege every kept Sub is really paying for, whether he knows it yet or not.</p>
-        <p>And here's what that actually feels like, because the description above is only the structure:</p>
-        <p>You get a goddess who remembers her loyal ones. I keep track. The people who treat me well stay on my mind long after the night ends. I'll check on you. I'll tease you. I'll send you something that makes your day. I'll make you feel seen in a way you probably haven't felt in a while.</p>
-        <p>Kept positions are limited. Genuinely limited, because I refuse to keep more Subs than I can actually take care of, and I take care of Mine well. When a position opens, it goes to a man already in my world who has proven himself over time. There's no application button for this one. There's only the long game.</p>
-        <p><strong>Available to:</strong> earned. Never bought outright, though the tributes are certainly part of it.</p>
+        <h2 id="kept-dynamic">The Kept <em>Dynamic.</em></h2>
+        <p>There are senders, and there are Mine. A sender tributes when the mood strikes and gets my attention when I have it. That's fine. A kept Sub is different: he belongs to me on an ongoing basis, and receives my consistency in return.</p>
+        <p>Being kept is earned over time, through tributes, service, and the way you show up. It is never bought outright. I keep only the people I can genuinely care for, so positions remain limited.</p>
+        <p>What that means in practice is personal attention: check-ins, voice notes, tailored tasks, structure, praise when you've earned it, and my life a little closer—travel diaries and the moments between the moments. I learn my kept Subs well enough to know what they need, and I do not do that carelessly.</p>
+        <p>Start with the intake. Be excellent there. Let time make its argument.</p>
         <h2>What I Don't <em>Offer.</em></h2>
         <p>I don't do discounts. I don't do “first-time specials.” I don't negotiate tributes, and I don't refund them. I don't do free samples, because I'm not a bakery, and the men who belong here never asked for one.</p>
         <p>I don't offer my time to men who haven't completed an intake. I don't offer my attention to men who treat me like a service. And I don't offer anything on this page to a man who read it looking for the cheapest option, because he was never going to be happy here, and I'd rather he find that out on this page than in my inbox.</p>
