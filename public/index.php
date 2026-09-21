@@ -20,7 +20,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     <header class="site-header">
       <a class="brand" href="#top" aria-label="La Davina Emilia, home"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
       <nav aria-label="Primary navigation">
-        <a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a>
+        <a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a href="/what-i-offer.php">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a>
       </nav>
     </header>
     <main id="main">

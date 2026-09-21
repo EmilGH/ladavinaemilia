@@ -14,7 +14,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
-    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php" aria-current="page">Rules</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a></nav>
+    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php" aria-current="page">Rules</a><a href="/what-i-offer.php">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a></nav>
   </header>
   <main id="main" class="worship-shell">
     <article class="worship-letter rules-letter">
@@ -47,7 +47,6 @@
         <p>You are safe. Limits are respected, always. Discretion matters deeply to me, and I handle private information carefully. Read my <a href="/privacy.php">Discretion &amp; Privacy</a> page for a clear account of the protections currently in place.</p>
         <p>You are held to a standard. I'm a gentle goddess, and I want to be clear that gentle doesn't mean soft. I lead with warmth, I praise generously, and I expect a great deal. My men rise to my standards because my standards are worth rising to. And when you fall short, and you will, you'll get the quiet, the four words, the withdrawal. You already know how that works. Good men work very hard to avoid it, and are better men for the effort.</p>
         <p>You give, and you're given to. This is a dynamic, not a drain (unless draining is what you've asked for, and some of my men have). You give your tribute, your effort, your honesty, and in return you get my attention, my structure, my memory, my warmth, and a place in the world of a woman who is building something extraordinary. Nobody in my world gives into a void. Even my drained ones are seen while they're emptied. Even my set-apart ones are Mine.</p>
-        <p>And you may, if it's yours, belong as family. Some of my men serve me as a Daddy serves his Little. Yes, the caretaking runs toward me, and if that sentence made something in your chest go quiet and attentive, the intake has questions for you.</p>
         <p>That's what it means to be Mine.</p>
         <p>Three rules. Clear as glass. A role with weight and warmth in it. And somewhere in my world, a place that might be waiting for you, if you're very good.</p>
         <a class="button button-primary" href="/survey-gate.php">Begin the Intake <span aria-hidden="true">↗</span></a>
