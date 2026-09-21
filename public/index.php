@@ -20,7 +20,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
     <header class="site-header">
       <a class="brand" href="#top" aria-label="La Davina Emilia, home"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#emilia">Emilia</a><a href="/album.php">Adventures</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
+        <a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/worship.php">Worship</a><a href="/ways-to-worship.php">Ways</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="#contact">Introduce yourself</a>
       </nav>
     </header>
     <main id="main">
@@ -30,7 +30,7 @@ $photoAccess = ($_SESSION['emilia_photo_access'] ?? false) === true;
           <p class="eyebrow"><span aria-hidden="true">✦</span> Enter her orbit</p>
           <h1>The moon does not ask to be noticed. <em>It simply pulls the tide.</em></h1>
           <p class="hero-intro">La Davina Emilia is a goddess of beautiful standards, far horizons, and attention that is always earned.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#emilia">Meet Emilia</a><a class="text-link" href="#contact">Are you worthy of her time? <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-actions"><a class="button button-primary" href="/who-i-am.php">Meet Emilia</a><a class="text-link" href="#contact">Are you worthy of her time? <span aria-hidden="true">↗</span></a></div>
         </div>
         <figure class="hero-portrait portrait public-portrait">
           <span class="frame-ornament frame-ornament-tl" aria-hidden="true">❦</span>
