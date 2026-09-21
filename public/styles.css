@@ -383,8 +383,14 @@ blockquote { max-width:950px; margin:1.7rem 0 0; font-family:var(--display); fon
 .album-collection h2 { margin:0; font-size:clamp(3rem,6vw,5.8rem); }
 .album-collection header>p:not(.eyebrow) { margin:0 0 .6rem; color:var(--mist); font-family:var(--display); font-size:1.15rem; line-height:1.45; }
 .album-page-grid { display:grid; gap:1.25rem; }
-.after-dark-grid { grid-template-columns:1.12fr .88fr; }
-.on-the-move-grid { grid-template-columns:.8fr 1.2fr; }
+.after-dark-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.after-dark-grid .album-page-tall { min-height:700px; }
+.on-the-move-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.on-the-move-grid .album-page-wide { grid-column:span 2; }
+.on-the-move-grid .album-page-tall { min-height:670px; }
+.salt-and-sun-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.salt-and-sun-grid .album-page-wide { grid-column:span 2; }
+.salt-and-sun-grid .album-page-tall { min-height:670px; }
 .album-page-photo { min-height:410px; margin:0; }
 .album-page-tall { min-height:600px; }
 .album-page-wide { min-height:500px; }
@@ -416,7 +422,7 @@ nav a:not(.nav-contact) { display:none; }
 
 .hero-caption { display:none; }
 
-.about-grid,.contact { grid-template-columns:1fr; }
+.about-grid,.contact,.album-page-grid { grid-template-columns:1fr; }
 
 .about-image { min-height:390px; max-width:450px; }
 
@@ -425,6 +431,10 @@ nav a:not(.nav-contact) { display:none; }
 .worthiness-mark { min-height:250px; }
 
 .album-tall,.album-photo { min-height:370px; }
+
+.on-the-move-grid .album-page-wide { grid-column:auto; }
+.salt-and-sun-grid .album-page-wide { grid-column:auto; }
+.after-dark-grid .album-page-tall,.on-the-move-grid .album-page-tall,.salt-and-sun-grid .album-page-tall { min-height:440px; }
 
 .album-heading { display:block; }
 

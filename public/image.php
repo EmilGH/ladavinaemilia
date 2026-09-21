@@ -13,6 +13,18 @@ $assets = [
     'travel' => 'travel.php',
     'boat' => 'boat.php',
     'table' => 'table.php',
+    'opera' => 'opera.php',
+    'alux' => 'alux.php',
+    'twa' => 'twa.php',
+    'scuba' => 'scuba.php',
+    'nola-pink' => 'nola-pink.php',
+    'nola-streetlight' => 'nola-streetlight.php',
+    'horse' => 'horse.php',
+    'wings-cosumel' => 'wings-cosumel.php',
+    'workout' => 'workout.php',
+    'tied-to-boat' => 'tied-to-boat.php',
+    'portrait-tied-to-boat' => 'portrait-tied-to-boat.php',
+    'goth-bike-girl' => 'goth-bike-girl.php',
 ];
 $id = (string) ($_GET['id'] ?? '');
 if (!isset($assets[$id])) {
