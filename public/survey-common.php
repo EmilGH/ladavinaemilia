@@ -12,7 +12,7 @@ return [
     'desired_dynamic' => 'What kind of dynamic do you want with me? (Casual, committed, daily, occasional, etc.)',
     'six_month_fantasy' => 'What does your fantasy version of us look like six months from now?',
     'when_good' => 'What do you want me to do when you’re good?',
-    'when_disappointing' => 'What do you want me to do when you disappoint me? (Remember: I don’t yell. I go quiet, and I tell you I’m disappointed. Does that work for you?)',
+    'when_disappointing' => 'What do you want me to do when you disappoint me?',
     'interests_ranked' => 'Are you looking for praise, guilt, denial, tasks, worship, roleplay, or a mix? Rank them.',
     'hard_limits' => 'Hard limits: What is absolutely off the table, always? (Nothing here is judged. Everything here is respected.)',
     'soft_limits' => 'Soft limits: What are you unsure about, curious about, or willing to explore with the right person?',
