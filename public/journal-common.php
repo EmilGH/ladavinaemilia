@@ -34,7 +34,7 @@ $existingEntries = [
             'I bought a condo.',
             'I wasn’t planning on it. I swear I wasn’t. But I walked through it once, barefoot, because that’s how you should walk through a home you’re considering, and I stood at the window and watched the light hit the jungle and thought: yes. Here. This one.',
             'There’s something about buying a home in a place where you arrived with no plan. It’s proof that you trust yourself. That you don’t need certainty to commit. That I am exactly the kind of woman who decides her life with her gut and her feet, and then makes the paperwork catch up.',
-            'My good boys helped, of course. Some of them knew what the condo fund was for. Some just sent tributes because I mentioned I was “making a decision” and they wanted to be part of it. They always do. There’s something delicious about a man across the world helping buy tiles for a bathroom he’ll never see, just because he wants a piece of my life to belong to him, and a piece of him to live in mine.',
+            'My good boys helped, of course. Some of them knew what the condo fund was for. Some just sent tributes because I mentioned I was “making a decision” and they wanted to be part of it. They always do. There’s something delicious about a man across the world helping buy tiles for a bathroom he’ll never see, just because he wants a piece of my life to belong to him, and a piece of him to live in Mine.',
             'Now the winter I skipped is happening somewhere far away, and I’m here, in my own place, with jungle light on my floors and my ink shining in the heat.',
             'Some people save for retirement. I save for decisions.',
             'This was a good one. 🖤',

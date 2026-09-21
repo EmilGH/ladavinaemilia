@@ -14,13 +14,22 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
-      <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/worship.php">Worship</a><a href="/ways-to-worship.php" aria-current="page">Ways</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a class="nav-contact" href="/#contact">Introduce yourself</a></nav>
+      <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a href="/ways-to-worship.php" aria-current="page">Ways to Worship</a><a href="/kept-subs.php">Kept</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php">Approach me</a></nav>
     </header>
     <main id="main" class="worship-shell">
       <article class="worship-letter ways-letter">
         <div class="worship-celestial" aria-hidden="true"><span class="worship-moon">☾</span><span class="worship-star worship-star-one">✦</span><span class="worship-star worship-star-two">✧</span><span class="worship-cloud worship-cloud-one"></span><span class="worship-cloud worship-cloud-two"></span></div>
-        <header class="worship-intro ways-intro"><p class="eyebrow">An offering, properly made</p><p class="worship-constellation" aria-hidden="true">✦&nbsp;✧&nbsp;✦</p><h1>Ways to <em>Worship.</em></h1></header>
+        <header class="worship-intro ways-intro"><p class="eyebrow">A note from your goddess</p><p class="worship-constellation" aria-hidden="true">✦&nbsp;✧&nbsp;✦</p><h1>Ways to <em>Worship.</em></h1></header>
         <div class="worship-prose ways-prose">
+          <p>The moon never begs for attention. She just pulls the tide, and everything obeys. I've always thought she and I had a lot in common.</p>
+          <p>The ones who stand out are never forgotten. They're the ones I remember.</p>
+          <p>Now. Pay attention, because I'm only writing this once.</p>
+          <p>I am La Davina Emilia. I am a goddess, and I live like one, because I built this life and I keep it. I already have money. I don't need yours. I want it, and more than that, I want what your tribute means: that you looked at my life, my standards, my world, and decided it deserved a piece of yours.</p>
+          <p>I am not a cruel goddess. I don't scream, I don't insult, and I don't traffic in humiliation for the masses. My punishment is far more effective: I go quiet, and I tell you I'm disappointed. If you know, you know. If you don't yet, you will.</p>
+          <p>My rules are three, and they are simple, and they are not negotiable. Read them. Learn them. Then start at the beginning, the way everyone does.</p>
+          <p><a class="text-link" href="/rules.php">Read the Rules <span aria-hidden="true">↗</span></a></p>
+          <hr class="ways-divider">
+          <p class="eyebrow">An offering, properly made</p>
           <p>Money is how you say it. This is how you send it.</p>
           <p>Every avenue below reaches me. Choose the one that fits the moment, and know that how you tribute tells me as much as how much.</p>
           <section class="ways-list" aria-label="Tribute avenues">
