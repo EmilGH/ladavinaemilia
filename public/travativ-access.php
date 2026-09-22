@@ -39,15 +39,21 @@ const EMILIA_COLLECTIONS = [
 /**
  * Pick up a returning visitor and mirror their access into the old flags.
  *
- * travativ_allows() consumes the token if this request is carrying one, then
- * redirects to the clean URL — so this runs before any output.
+ * The probe runs first: it asks Travativ once per visit whether whoever is
+ * here may see anything, so someone already signed in — Emilia herself, or a
+ * lead she has let in — simply sees the photographs, instead of meeting a
+ * locked placeholder they have to click.
+ *
+ * Runs before any output.
  */
 function emilia_sync_access(): void
 {
     if (!emilia_access_configured()) return;
 
+    travativ_probe();
+
     foreach (EMILIA_COLLECTIONS as $area => $flag) {
-        if (travativ_allows($area)) {
+        if (($_SESSION[travativ_session_key($area)] ?? false) === true) {
             $_SESSION[$flag] = true;
         }
     }

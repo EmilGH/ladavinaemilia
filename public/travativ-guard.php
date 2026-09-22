@@ -16,7 +16,7 @@
  * The guard keeps its own PHP session flag once someone is let in, so there is
  * exactly one round trip per visitor per session — not one per page.
  *
- * Version 1.0.0 · https://travativ.com
+ * Version 1.1.0 · https://travativ.com
  */
 
 declare(strict_types=1);
@@ -65,7 +65,7 @@ function travativ_current_url(): string
     $parts = parse_url($uri);
     $path  = $parts['path'] ?? '/';
     parse_str($parts['query'] ?? '', $q);
-    unset($q['tv_token'], $q['tv_state']);
+    unset($q['tv_token'], $q['tv_state'], $q['tv_probe']);
     $qs = $q ? '?' . http_build_query($q) : '';
 
     return ($https ? 'https' : 'http') . '://' . $host . $path . $qs;
@@ -122,9 +122,64 @@ function travativ_handle_callback(): bool
     if (!hash_equals($state, (string) ($p['state'] ?? ''))) return false;
     if (empty($p['area'])) return false;
 
-    $_SESSION[travativ_session_key((string) $p['area'])] = true;
+    // A probe answers with every area the visitor may open; a single gate
+    // answers with one. Accept both shapes.
+    $areas = $p['areas'] ?? null;
+    if (!is_array($areas) || !$areas) $areas = [(string) $p['area']];
+
+    foreach ($areas as $a) {
+        if (is_string($a) && $a !== '') $_SESSION[travativ_session_key($a)] = true;
+    }
     $_SESSION['travativ_sub'] = (string) ($p['sub'] ?? '');
+    $_SESSION['travativ_probed'] = true;
     return true;
+}
+
+/**
+ * Ask once, silently, whether this visitor may see anything.
+ *
+ * Without this, someone already signed in still meets a locked placeholder and
+ * has to click it — the site has no way of knowing they are allowed until it
+ * asks. This asks once per session, on the first page they land on, and
+ * remembers the answer either way so nobody is bounced repeatedly.
+ *
+ * Call it before any output.
+ */
+function travativ_probe(): void
+{
+    travativ__start_session();
+
+    // The answer to a probe that found nothing.
+    if (isset($_GET['tv_probe'])) {
+        $_SESSION['travativ_probed'] = true;
+        header('Location: ' . travativ_current_url(), true, 302);
+        exit;
+    }
+
+    if (travativ_handle_callback()) {
+        header('Location: ' . travativ_current_url(), true, 302);
+        exit;
+    }
+
+    if (($_SESSION['travativ_probed'] ?? false) === true) return;
+    if (TRAVATIV_SITE_KEY === '' || TRAVATIV_SECRET === '') return;
+
+    // Don't send crawlers on a round trip; they have nothing to be signed in as.
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    if ($ua === '' || preg_match('~bot|crawl|spider|slurp|preview|facebookexternalhit~i', $ua)) {
+        $_SESSION['travativ_probed'] = true;
+        return;
+    }
+    if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'GET') return;
+
+    $state = bin2hex(random_bytes(12));
+    $_SESSION['travativ_state'] = $state;
+
+    header('Location: ' . rtrim(TRAVATIV_BASE, '/') . '/access/'
+        . rawurlencode(TRAVATIV_SITE_KEY) . '/_probe'
+        . '?return=' . rawurlencode(travativ_current_url())
+        . '&state=' . rawurlencode($state), true, 302);
+    exit;
 }
 
 /** Has this visitor already been let into this area? */
@@ -163,5 +218,5 @@ function travativ_forget(): void
     foreach (array_keys($_SESSION) as $k) {
         if (str_starts_with((string) $k, TRAVATIV_SESSION_PREFIX)) unset($_SESSION[$k]);
     }
-    unset($_SESSION['travativ_sub']);
+    unset($_SESSION['travativ_sub'], $_SESSION['travativ_probed']);
 }
