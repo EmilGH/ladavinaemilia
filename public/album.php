@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 session_start();
+require __DIR__ . '/travativ-access.php';
 $afterDarkAccess = ($_SESSION['emilia_after_dark_photo_access'] ?? false) === true;
 $onTheMoveAccess = ($_SESSION['emilia_on_the_move_photo_access'] ?? false) === true;
 $saltAndSunAccess = ($_SESSION['emilia_salt_and_sun_photo_access'] ?? false) === true;
