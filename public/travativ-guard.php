@@ -16,7 +16,7 @@
  * The guard keeps its own PHP session flag once someone is let in, so there is
  * exactly one round trip per visitor per session — not one per page.
  *
- * Version 1.1.0 · https://travativ.com
+ * Version 1.2.0 · https://travativ.com
  */
 
 declare(strict_types=1);
@@ -33,6 +33,16 @@ if (!defined('TRAVATIV_SESSION_PREFIX')) define('TRAVATIV_SESSION_PREFIX', 'trav
 
 /** Allowed clock drift, in seconds, between this server and Travativ. */
 if (!defined('TRAVATIV_SKEW')) define('TRAVATIV_SKEW', 60);
+
+/**
+ * How long an answer is trusted before asking again, in seconds.
+ *
+ * Once access is in this site's session it stays there, so without a re-check
+ * a revocation would not take hold until the visitor closed their browser.
+ * Fifteen minutes keeps revocation meaningful at the cost of one invisible
+ * redirect every quarter of an hour. Set 0 to ask only once per session.
+ */
+if (!defined('TRAVATIV_PROBE_TTL')) define('TRAVATIV_PROBE_TTL', 900);
 // ─────────────────────────────────────────────────────────────────────────
 
 
@@ -132,6 +142,7 @@ function travativ_handle_callback(): bool
     }
     $_SESSION['travativ_sub'] = (string) ($p['sub'] ?? '');
     $_SESSION['travativ_probed'] = true;
+    $_SESSION['travativ_probed_at'] = time();
     return true;
 }
 
@@ -152,6 +163,7 @@ function travativ_probe(): void
     // The answer to a probe that found nothing.
     if (isset($_GET['tv_probe'])) {
         $_SESSION['travativ_probed'] = true;
+        $_SESSION['travativ_probed_at'] = time();
         header('Location: ' . travativ_current_url(), true, 302);
         exit;
     }
@@ -161,13 +173,27 @@ function travativ_probe(): void
         exit;
     }
 
-    if (($_SESSION['travativ_probed'] ?? false) === true) return;
+    // Re-ask once the previous answer is stale, so a revocation takes hold
+    // while they are still browsing rather than whenever they close the tab.
+    $askedAt = (int) ($_SESSION['travativ_probed_at'] ?? 0);
+    $stale = TRAVATIV_PROBE_TTL > 0 && $askedAt > 0
+          && (time() - $askedAt) > TRAVATIV_PROBE_TTL;
+
+    if (($_SESSION['travativ_probed'] ?? false) === true && !$stale) return;
+
+    if ($stale) {
+        // Drop what we were told last time; the next answer replaces it.
+        foreach (array_keys($_SESSION) as $k) {
+            if (str_starts_with((string) $k, TRAVATIV_SESSION_PREFIX)) unset($_SESSION[$k]);
+        }
+    }
     if (TRAVATIV_SITE_KEY === '' || TRAVATIV_SECRET === '') return;
 
     // Don't send crawlers on a round trip; they have nothing to be signed in as.
     $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
     if ($ua === '' || preg_match('~bot|crawl|spider|slurp|preview|facebookexternalhit~i', $ua)) {
         $_SESSION['travativ_probed'] = true;
+        $_SESSION['travativ_probed_at'] = time();
         return;
     }
     if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'GET') return;
@@ -218,5 +244,6 @@ function travativ_forget(): void
     foreach (array_keys($_SESSION) as $k) {
         if (str_starts_with((string) $k, TRAVATIV_SESSION_PREFIX)) unset($_SESSION[$k]);
     }
-    unset($_SESSION['travativ_sub'], $_SESSION['travativ_probed']);
+    unset($_SESSION['travativ_sub'], $_SESSION['travativ_probed'],
+          $_SESSION['travativ_probed_at']);
 }

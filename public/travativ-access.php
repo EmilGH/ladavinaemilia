@@ -52,9 +52,15 @@ function emilia_sync_access(): void
 
     travativ_probe();
 
+    // Mirror in both directions: an area that is no longer open must close
+    // here too, or a revoked visitor would keep seeing the photographs from
+    // this site's own flag long after Travativ stopped saying yes.
     foreach (EMILIA_COLLECTIONS as $area => $flag) {
-        if (($_SESSION[travativ_session_key($area)] ?? false) === true) {
+        $open = ($_SESSION[travativ_session_key($area)] ?? false) === true;
+        if ($open) {
             $_SESSION[$flag] = true;
+        } else {
+            unset($_SESSION[$flag]);
         }
     }
 }
