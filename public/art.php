@@ -1,10 +1,5 @@
 <?php
 declare(strict_types=1);
-session_start();
-if (($_SESSION['emilia_art_access'] ?? false) !== true) {
-    header('Location: /art-gate.php', true, 303);
-    exit;
-}
 $entries = require __DIR__ . '/art-common.php';
 ?>
 <!doctype html>
