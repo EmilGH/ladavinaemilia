@@ -10,8 +10,22 @@
  */
 declare(strict_types=1);
 
-require_once __DIR__ . '/travativ-config.php';
+/**
+ * The config holds the signing secret and is deliberately not in the repo, so
+ * it can be absent on a fresh deploy. A missing or half-filled config must
+ * leave every collection closed — never take the site down with it.
+ */
+if (is_readable(__DIR__ . '/travativ-config.php')) {
+    require_once __DIR__ . '/travativ-config.php';
+}
 require_once __DIR__ . '/travativ-guard.php';
+
+function emilia_access_configured(): bool
+{
+    return defined('TRAVATIV_SITE_KEY') && TRAVATIV_SITE_KEY !== ''
+        && defined('TRAVATIV_SECRET')   && TRAVATIV_SECRET !== ''
+        && TRAVATIV_SECRET !== 'paste-the-secret-here';
+}
 
 /** Collection slug in Travativ => the session flag this site already uses. */
 const EMILIA_COLLECTIONS = [
@@ -30,6 +44,8 @@ const EMILIA_COLLECTIONS = [
  */
 function emilia_sync_access(): void
 {
+    if (!emilia_access_configured()) return;
+
     foreach (EMILIA_COLLECTIONS as $area => $flag) {
         if (travativ_allows($area)) {
             $_SESSION[$flag] = true;
@@ -40,6 +56,7 @@ function emilia_sync_access(): void
 /** Where to send someone who wants into a collection. */
 function emilia_gate_url(string $collection, ?string $return = null): string
 {
+    if (!emilia_access_configured()) return '/gate.php';
     if (!isset(EMILIA_COLLECTIONS[$collection])) $collection = 'home';
     return travativ_gate_url($collection, $return);
 }
