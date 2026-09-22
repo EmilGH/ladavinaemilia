@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 session_start();
+require __DIR__ . '/travativ-access.php';
 $photoAccess = ($_SESSION['emilia_home_photo_access'] ?? false) === true;
 ?>
 <!doctype html>
