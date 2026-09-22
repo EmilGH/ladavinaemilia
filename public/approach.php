@@ -14,7 +14,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✦</span><span>La Davina Emilia</span></a>
-    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a class="nav-intake" href="/survey-gate.php">Begin Intake</a><a href="/what-i-offer.php">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/what-i-offer.php#kept-dynamic">Kept</a><a href="/testaments.php">Testaments</a><a href="/journal-gate.php">Journal</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php" aria-current="page">Approach me</a></nav>
+    <nav aria-label="Primary navigation"><a href="/start-here.php">Start here</a><a href="/who-i-am.php">Who I am</a><a href="/rules.php">Rules</a><a class="nav-intake" href="/survey-gate.php">Begin Intake</a><a href="/what-i-offer.php">What I Offer</a><a href="/ways-to-worship.php">Ways to Worship</a><a href="/privacy.php">Discretion</a><a href="/testaments.php">Testaments</a><a href="/journal.php">Vespers</a><a href="/album.php">Altar</a><a href="/faq.php">FAQ</a><a class="nav-contact" href="/approach.php" aria-current="page">Approach me</a></nav>
   </header>
   <main id="main" class="worship-shell">
     <article class="worship-letter approach-letter">
@@ -24,7 +24,7 @@
         <p>So you want my attention. Let's make sure you ask for it correctly.</p>
         <p>If you're new: you don't contact me yet. You read the <a href="/rules.php">Rules</a>, you fill out the intake, and you let your answers introduce you. That is the introduction. The intake is where I meet everyone.</p>
         <p>If you've completed the intake: you'll hear from me if I like what I read. I know that's hard. Waiting gracefully is the second thing I'll ever teach you.</p>
-        <p>If you're an existing Sub: you know how to reach me, and you know that “hey” is not a message, it's a noise.</p>
+        <p>If you're an existing sub: you know how to reach me, and you know that “hey” is not a message, it's a noise.</p>
         <p>If you have a business inquiry: partnerships, features, collaborations, use the email below with <em>Business</em> in the subject line and make your first sentence worth my time. I respond to professional inquiries the way I respond to everything: properly, and on my schedule.</p>
         <p>One instruction, for everyone: whatever you write, write it like someone who's about to be evaluated by the most interesting woman they'll contact this year. Because you are.</p>
         <a class="button button-primary" href="mailto:Hi@davinaemilia.com">Write to Emilia <span aria-hidden="true">↗</span></a>
